@@ -101,5 +101,21 @@ namespace StackAndQueueOfDataStructure
             }
             Console.WriteLine(" ");
         }
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty, Deletion is not possible");
+                return;
+            }
+            else
+            {
+                while (this.head != null)
+                {
+                    Console.WriteLine("Value Dequeued is " +this.head.data);
+                    this.head = this.head.next;
+                }
+            }
+        }
     }
 }

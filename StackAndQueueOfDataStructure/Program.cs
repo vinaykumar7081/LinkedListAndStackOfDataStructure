@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine(" ***** WELCOME IN STACK AND QUEUE OPERATIONS ***** ");
     StackAndQueue stack=new StackAndQueue();
-        Console.WriteLine(" Display Stack Elements 1\n Peek And Pop Operation 2\n Deleting Top of the Elements Of Stack 3\n Checking Stack is Empty 4\n Display Queue Elements 5\n");
+        Console.WriteLine(" Display Stack Elements 1\n Peek And Pop Operation 2\n Deleting Top of the Elements Of Stack 3\n Checking Stack is Empty 4\n Display Queue Elements 5\n Delete Elements From Queues 6\n");
         bool check = true;
         while (check)
         { 
@@ -33,6 +33,9 @@ class Program
                     stack.Enqueue(70);
                     stack.Enqueue(30);
                     stack.Enqueue(56);
+                    break;
+                case 6:
+                    stack.Dequeue();
                     break;
                 case 0:
                     check = false;
